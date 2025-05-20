@@ -1,15 +1,15 @@
 import { forgotPasswordAction } from "@/app/actions";
 import { SubmitButton } from "@/app/components/submit-button";
 import Link from "next/link";
+// Importar el hook para acceder a los searchParams
+import { useSearchParams } from 'next/navigation';
 
-export default async function ForgotPassword({
-  searchParams,
-}: {
-  searchParams: { [key: string]: string };
-}) {
-  const message = searchParams.message;
-  const error = searchParams.error;
-  const success = searchParams.success;
+export default async function ForgotPassword(){
+   const searchParams = useSearchParams();  // Obtener los parámetros de la URL
+
+  const message = searchParams.get('message');  // Obtener el parámetro 'message'
+  const error = searchParams.get('error');  // Obtener el parámetro 'error'
+  const success = searchParams.get('success');  // Obtener el parámetro 'success'
 
   return (
     <div className="min-h-screen flex flex-col items-center pt-24">
