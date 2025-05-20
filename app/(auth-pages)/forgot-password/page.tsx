@@ -1,10 +1,12 @@
+"use client"; 
+
 import { forgotPasswordAction } from "@/app/actions";
 import { SubmitButton } from "@/app/components/submit-button";
 import Link from "next/link";
 // Importar el hook para acceder a los searchParams
 import { useSearchParams } from 'next/navigation';
 
-export default async function ForgotPassword(){
+export default function ForgotPassword(){
    const searchParams = useSearchParams();  // Obtener los parámetros de la URL
 
   const message = searchParams.get('message');  // Obtener el parámetro 'message'
