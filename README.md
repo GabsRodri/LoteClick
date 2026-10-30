@@ -126,10 +126,6 @@ LoteClick/
 
 Proyecto desarrollado en el marco de la formación académica del programa de Ingeniería de Sistemas de la Universidad Piloto de Colombia.
 
-## 📌 Estado del proyecto
-
-Proyecto en desarrollo. Se continúa trabajando en la implementación y evolución de sus funcionalidades.
-
 ## 👩‍💻 Repositorio
 
 [Consultar el código fuente de LoteClick en GitHub](https://github.com/GabsRodri/LoteClick).
