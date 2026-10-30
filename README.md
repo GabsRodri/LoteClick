@@ -1,104 +1,135 @@
-<a href="https://demo-nextjs-with-supabase.vercel.app/">
-  <img alt="Next.js and Supabase Starter Kit - the fastest way to build apps with Next.js and Supabase" src="https://demo-nextjs-with-supabase.vercel.app/opengraph-image.png">
-  <h1 align="center">Next.js and Supabase Starter Kit</h1>
-</a>
+# LoteClick 🏗️
 
-<p align="center">
- The fastest way to build apps with Next.js and Supabase
-</p>
+**Plataforma web para la gestión y administración de procesos en empresas constructoras.**
 
-<p align="center">
-  <a href="#features"><strong>Features</strong></a> ·
-  <a href="#demo"><strong>Demo</strong></a> ·
-  <a href="#deploy-to-vercel"><strong>Deploy to Vercel</strong></a> ·
-  <a href="#clone-and-run-locally"><strong>Clone and run locally</strong></a> ·
-  <a href="#feedback-and-issues"><strong>Feedback and issues</strong></a>
-  <a href="#more-supabase-examples"><strong>More Examples</strong></a>
-</p>
-<br/>
+LoteClick es una aplicación web desarrollada como proyecto académico de Ingeniería de Sistemas de la Universidad Piloto de Colombia. Su propósito es apoyar la gestión de información y procesos de una empresa constructora mediante una plataforma centralizada, organizada y accesible según los roles de usuario.
 
-## Features
+El proyecto busca facilitar la administración de usuarios, la organización de procesos y el seguimiento de la información relacionada con la actividad constructiva.
 
-- Works across the entire [Next.js](https://nextjs.org) stack
-  - App Router
-  - Pages Router
-  - Middleware
-  - Client
-  - Server
-  - It just works!
-- supabase-ssr. A package to configure Supabase Auth to use cookies
-- Styling with [Tailwind CSS](https://tailwindcss.com)
-- Components with [shadcn/ui](https://ui.shadcn.com/)
-- Optional deployment with [Supabase Vercel Integration and Vercel deploy](#deploy-your-own)
-  - Environment variables automatically assigned to Vercel project
+## 🎯 Objetivo del proyecto
 
-## Demo
+Desarrollar una solución tecnológica que facilite la gestión de procesos de una empresa constructora, proporcionando herramientas para organizar la información, administrar usuarios y ofrecer funcionalidades diferenciadas según las responsabilidades de cada rol.
 
-You can view a fully working demo at [demo-nextjs-with-supabase.vercel.app](https://demo-nextjs-with-supabase.vercel.app/).
+## ⚙️ Funcionalidades
 
-## Deploy to Vercel
+Entre las funcionalidades contempladas en el sistema se encuentran:
 
-Vercel deployment will guide you through creating a Supabase account and project.
+- **Autenticación de usuarios:** registro e inicio de sesión.
+- **Gestión de roles:** acceso diferenciado para administradores, supervisores y empleados.
+- **Control de acceso:** protección de rutas y funcionalidades según el rol del usuario.
+- **Gestión administrativa:** herramientas para la administración de usuarios y procesos.
+- **Gestión de lotes:** funcionalidades orientadas a la organización y seguimiento de lotes.
+- **Gestión de proyectos:** administración de información relacionada con los proyectos de construcción.
 
-After installation of the Supabase integration, all relevant environment variables will be assigned to the project so the deployment is fully functioning.
+*Nota: las funcionalidades se encuentran sujetas al estado de implementación de cada módulo.*
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fnext.js%2Ftree%2Fcanary%2Fexamples%2Fwith-supabase&project-name=nextjs-with-supabase&repository-name=nextjs-with-supabase&demo-title=nextjs-with-supabase&demo-description=This+starter+configures+Supabase+Auth+to+use+cookies%2C+making+the+user%27s+session+available+throughout+the+entire+Next.js+app+-+Client+Components%2C+Server+Components%2C+Route+Handlers%2C+Server+Actions+and+Middleware.&demo-url=https%3A%2F%2Fdemo-nextjs-with-supabase.vercel.app%2F&external-id=https%3A%2F%2Fgithub.com%2Fvercel%2Fnext.js%2Ftree%2Fcanary%2Fexamples%2Fwith-supabase&demo-image=https%3A%2F%2Fdemo-nextjs-with-supabase.vercel.app%2Fopengraph-image.png)
+## 🛠️ Tecnologías utilizadas
 
-The above will also clone the Starter kit to your GitHub, you can clone that locally and develop locally.
+| Tecnología | Aplicación |
+|---|---|
+| [Next.js](https://nextjs.org/) | Framework para el desarrollo de la aplicación web. |
+| [React](https://react.dev/) | Construcción de interfaces de usuario. |
+| [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript) | Lógica de la aplicación. |
+| [Supabase](https://supabase.com/) | Servicios de base de datos y autenticación. |
+| [PostgreSQL](https://www.postgresql.org/) | Sistema de gestión de bases de datos utilizado por Supabase. |
+| [Tailwind CSS](https://tailwindcss.com/) | Estilos y diseño de la interfaz. |
+| [Git](https://git-scm.com/) y [GitHub](https://github.com/) | Control de versiones y gestión del código fuente. |
 
-If you wish to just develop locally and not deploy to Vercel, [follow the steps below](#clone-and-run-locally).
+## 👥 Roles de usuario
 
-## Clone and run locally
+La aplicación contempla tres roles principales:
 
-1. You'll first need a Supabase project which can be made [via the Supabase dashboard](https://database.new)
+- **Administrador:** encargado de las funciones administrativas y la gestión de usuarios.
+- **Supervisor:** orientado a la supervisión y seguimiento de procesos relacionados con los lotes.
+- **Empleado:** dispone de funcionalidades relacionadas con la gestión de sus proyectos y actividades.
 
-2. Create a Next.js app using the Supabase Starter template npx command
+Cada rol cuenta con permisos y accesos diferenciados dentro de la aplicación.
 
-   ```bash
-   npx create-next-app --example with-supabase with-supabase-app
-   ```
+## 🚀 Instalación y ejecución local
 
-   ```bash
-   yarn create next-app --example with-supabase with-supabase-app
-   ```
+### Requisitos previos
 
-   ```bash
-   pnpm create next-app --example with-supabase with-supabase-app
-   ```
+Para ejecutar el proyecto necesitas:
 
-3. Use `cd` to change into the app's directory
+- [Node.js](https://nodejs.org/)
+- npm
+- Una cuenta y un proyecto configurado en [Supabase](https://supabase.com/).
+- Git.
 
-   ```bash
-   cd with-supabase-app
-   ```
+### 1. Clonar el repositorio
 
-4. Rename `.env.example` to `.env.local` and update the following:
+```bash
+git clone https://github.com/GabsRodri/LoteClick.git
+```
 
-   ```
-   NEXT_PUBLIC_SUPABASE_URL=[INSERT SUPABASE PROJECT URL]
-   NEXT_PUBLIC_SUPABASE_ANON_KEY=[INSERT SUPABASE PROJECT API ANON KEY]
-   ```
+### 2. Acceder al directorio
 
-   Both `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` can be found in [your Supabase project's API settings](https://app.supabase.com/project/_/settings/api)
+```bash
+cd LoteClick
+```
 
-5. You can now run the Next.js local development server:
+### 3. Instalar las dependencias
 
-   ```bash
-   npm run dev
-   ```
+```bash
+npm install
+```
 
-   The starter kit should now be running on [localhost:3000](http://localhost:3000/).
+### 4. Configurar las variables de entorno
 
-6. This template comes with the default shadcn/ui style initialized. If you instead want other ui.shadcn styles, delete `components.json` and [re-install shadcn/ui](https://ui.shadcn.com/docs/installation/next)
+Crea un archivo `.env.local` en la raíz del proyecto y agrega las credenciales de tu proyecto de Supabase:
 
-> Check out [the docs for Local Development](https://supabase.com/docs/guides/getting-started/local-development) to also run Supabase locally.
+```env
+NEXT_PUBLIC_SUPABASE_URL=TU_SUPABASE_PROJECT_URL
+NEXT_PUBLIC_SUPABASE_ANON_KEY=TU_SUPABASE_ANON_KEY
+```
 
-## Feedback and issues
+Puedes obtener estos valores desde la configuración de API de tu proyecto en Supabase.
 
-Please file feedback and issues over on the [Supabase GitHub org](https://github.com/supabase/supabase/issues/new/choose).
+**Importante:** no compartas claves privadas ni credenciales sensibles en el repositorio.
 
-## More Supabase examples
+### 5. Ejecutar el servidor de desarrollo
 
-- [Next.js Subscription Payments Starter](https://github.com/vercel/nextjs-subscription-payments)
-- [Cookie-based Auth and the Next.js 13 App Router (free course)](https://youtube.com/playlist?list=PL5S4mPUpp4OtMhpnp93EFSo42iQ40XjbF)
-- [Supabase Auth and the Next.js App Router](https://github.com/supabase/supabase/tree/master/examples/auth/nextjs)
+```bash
+npm run dev
+```
+
+### 6. Abrir la aplicación
+
+Ingresa desde tu navegador a:
+
+```text
+http://localhost:3000
+```
+
+## 📁 Estructura del proyecto
+
+El proyecto utiliza la arquitectura de Next.js App Router. La organización general del código se basa en directorios para páginas, componentes, funcionalidades y configuración de servicios.
+
+```text
+LoteClick/
+├── app/
+│   ├── components/
+│   ├── protected/
+│   ├── sign-in/
+│   ├── sign-up/
+│   └── ...
+├── utils/
+│   └── supabase/
+├── public/
+├── package.json
+└── README.md
+```
+
+*La estructura puede variar según la evolución del proyecto.*
+
+## 🎓 Contexto académico
+
+Proyecto desarrollado en el marco de la formación académica del programa de Ingeniería de Sistemas de la Universidad Piloto de Colombia.
+
+## 📌 Estado del proyecto
+
+Proyecto en desarrollo. Se continúa trabajando en la implementación y evolución de sus funcionalidades.
+
+## 👩‍💻 Repositorio
+
+[Consultar el código fuente de LoteClick en GitHub](https://github.com/GabsRodri/LoteClick).
